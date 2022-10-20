@@ -9,7 +9,7 @@ pipeline {
         stage ('build'){
             steps{
                 sh 'npm install'
-                sh 'npm build  js-e2e-express-server/package.json'
+                sh 'npm run  build  js-e2e-express-server/package.json'
             }
         }
     }
