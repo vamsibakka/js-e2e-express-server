@@ -12,10 +12,5 @@ pipeline {
                 sh 'npm build'
             }
         }
-        stage ('artifactory') {
-            steps{
-                artifactory archive: '**/target/*.jar'
-            }
-        }
     }
 }
